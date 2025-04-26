@@ -49,6 +49,18 @@ npm start
 
 ## GitHub Pagesでの公開方法
 
+### 自動デプロイ（GitHub Actions）
+
+このリポジトリはGitHub Actionsを使用して、mainブランチへのプッシュ時に自動的にビルドとデプロイを行います。
+
+1. リポジトリをGitHubにプッシュします
+2. mainブランチへの変更がプッシュされると、GitHub Actionsが自動的にビルドとデプロイを実行します
+3. GitHubリポジトリの設定ページで、GitHub Pagesのソースを「docs」フォルダに設定します
+
+### 手動デプロイ
+
+手動でデプロイする場合は、以下の手順に従ってください：
+
 1. リポジトリをGitHubにプッシュします
 2. `npm run deploy`を実行してdocsディレクトリにファイルを生成します
 3. 変更をコミットしてGitHubにプッシュします
