@@ -10,7 +10,9 @@
     "format": "biome format --write .",
     "lint": "biome lint .",
     "check": "biome check --apply .",
-    "start": "npm run build && http-server src"
+    "start": "npm run build && http-server src",
+    "deploy": "npm run build && cp -r src/css docs/ && cp src/ts/app.js docs/js/ && cp src/index.html docs/",
+    "serve:docs": "http-server docs"
   },
   "keywords": [],
   "author": "",
