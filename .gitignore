@@ -2,7 +2,9 @@
 node_modules/
 
 # ビルド成果物
-docs/
+docs/**/*.html
+docs/**/*.js
+docs/**/*.css
 
 # OS固有のファイル
 .DS_Store
